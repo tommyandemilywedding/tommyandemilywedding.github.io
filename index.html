@@ -1,57 +1,116 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0"/>
-        <title>Our Wedding Website!</title>
-        <meta name="description" content="It's even more fucking perfect than the others motherfucking websites."/>
-        <!--<link rel="canonical" href=/> -->
-        <style>
-            body {margin: 5% auto; background: #f2f2f2; color: #444444; font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.8; text-shadow: 0 1px 0 #ffffff; max-width: 73%;}
-            code {background: white;}
-            a {border-bottom: 1px solid #444444; color: #444444; text-decoration: none;}
-            a:hover {border-bottom: 0;}
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>Emily and Tommy's Wedding Website</h1>
-			<img src="photo.jpg" alt="Beautiful Picture of us" width="167" height="222">
-            <aside>After 7 years, Emily and Tommy have <em>finally</em> decided to get married!</aside>
-        </header>
-        <h2><strong>Here is the important information:</strong></h2>
-        <ul>
-            <li><em><b>Date:</b></em> Saturday April 27<sup>th </sup>, 2019</li>
-			<li><em><b>Time:</b></em> TBD </li>
-			<li><em><b>Location:</b></em> Meyer Ballroom at the Paramount Theatre</li>
-            <li><em><b>Address:</b></em> 8 East Galena Boulevard, Aurora, IL 60506</li>
-			<li><em><b>Parking:</b></em> TBD </li>
-        </ul>
-        <!--
-		<h2>What about Comic Sans?</h2>
-        <p>That really hurt! Who throws a shoe? Honestly?</p>
-        <h2>Let it breathe even more</h2>
-        <blockquote>
-            "Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married, they probably shouldn't be humping. The defaults are trash ― pick a minimum <code>line-height: 1.4</code> for body copy. Headings should be tighter. If you can't see that... piss off. If your text hits the side of the browser, fuck off forever. Have you ever seen a book like that? Yes? What a shitty book."<br/>
-            - <a href="http://bettermotherfuckingwebsite.com"><em>BMFW</em></a>
-        </blockquote>
-        <p>I made it even better: <code>line-height: 1.8</code></p>
-        <h2>A little less contrast</h2>
-        <blockquote>
-            "Black on white? How often do you see that kind of contrast in real life? Tone it down a bit, asshole."<br>
-            - <a href="http://bettermotherfuckingwebsite.com"><em>BMFW</em></a>
-        </blockquote>
-        <p>I made it even better: <code>background: #f2f2f2</code><br/>Because I don't care about 7 fucking lines of declarations.</p>
-        <h2>Yes, this continues to be fucking satirical, fuckers</h2>
-        <p>Like the creator of <a href="http://bettermotherfuckingwebsite.com">Better Motherfucking Website</a>, I ♥ what the creator of <a href="http://motherfuckingwebsite.com">Motherfucking Website</a> did. It's all about the message! But let's face it: would you rather have crap, or some beautifully-aligned shit?</p>
-        <blockquote>
-            "Imagine all the people..."<br>
-            - <em>John Lennon, Yoko's husband</em>
-        </blockquote>
-        <hr>
-        <!--<h2>Epilogue</h2>-->
-        <footer>
-            <p>&hearts; Made with love by Tommy &hearts;</p>
-        </footer>
-    </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("top.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("middle.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("bottom.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">Emily & Tommy - <em>April 27<sup>th</sup>, 2019</em></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">General Details</h3>
+  <p>Thank you for visiting our wedding webpage! We are so exited to have you as a guest at our wedding.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">COOL!</span>
+  </div>
+</div>
+
+</body>
+<footer>
+	<div><center>&hearts; Made with love by Tommy &hearts; - 02/03/2018 </center></div>
 </html>
