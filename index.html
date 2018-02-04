@@ -12,7 +12,7 @@ body, html {
   color: #777; 
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
@@ -29,11 +29,25 @@ body, html {
 .bgimg-2 {
   background-image: url("middle.jpg");
   min-height: 750px;
+  background-size: 33%;
+  background-position: center;
+  background-color: #ff9999;
 }
 
 .bgimg-3 {
   background-image: url("bottom.jpg");
-  min-height: 500px;
+  min-height: 750px;
+  background-position: center top;
+  background-size: 85%;
+  background-color: grey;
+}
+
+.bgimg-4 {
+  background-image: url("footer.jpg");
+  min-height: 100%;
+  background-position: center top;
+  background-size: 50%;
+  background-color: grey;
 }
 
 .caption {
@@ -96,12 +110,6 @@ h3 {
 	<li><b>Bar:</b> Open</li>
 </div>
 
-<div class="bgimg-2">
-  <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Crystal Gardens at Navy Pier - Where we got engaged</span>
-  </div>
-</div>
-
 <!-- Google Maps Api -->
 <div class="bgimg-2" id="map">
   <div class="caption">
@@ -125,6 +133,12 @@ h3 {
   </div>
 </div>
 
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Crystal Gardens at Navy Pier - Where we got engaged</span>
+  </div>
+</div>
+
 <div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <p></p>
@@ -143,7 +157,7 @@ h3 {
   </div>
 </div>
 
-<div class="bgimg-1">
+<div class="bgimg-2">
   <div class="caption">
     <span class="border">We look forward to sharing our day with you!</span>
   </div>
