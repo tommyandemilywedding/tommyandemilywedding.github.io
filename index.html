@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Our Wedding Webpage!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" charset='UTF-8'>
+<title>Our Wedding Website!</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1" charset='UTF-8'> -->
+<!-- Trying to force desktop version on mobile -->
+<meta name="viewport" content="width=1024" charset='UTF-8'>
 <style>
 body, html {
   height: 100%;
@@ -76,12 +78,12 @@ h3 {
   color: #111;
 }
 
-/* Turn off parallax scrolling for tablets and phones
+/* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
-} */
+} 
 </style>
 <style>
       #map {
@@ -130,6 +132,12 @@ h3 {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT8qo8jQN8MCHQLwCBU6j_TdjTnJuBdtA&callback=initMap">
     </script>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+    <p></p>
   </div>
 </div>
 
