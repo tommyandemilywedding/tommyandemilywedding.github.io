@@ -42,6 +42,7 @@ body, html {
   min-height: 100%;
   background-position: center top, center top;
   background-size: 50%, 100%;
+  background-repeat: no-repeat, repeat;
 }
 
 .caption {
