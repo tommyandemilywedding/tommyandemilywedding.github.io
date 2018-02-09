@@ -45,7 +45,37 @@ Clean up custom styles
 	<li><b>Location:</b> Paramount's Meyer Ballroom</li>
 	<li><b>Address:</b> 8 E Galena Blvd, Aurora, IL 60506</li>
 	<li><b>Bar:</b> Open</li>
+  </ul>
+  <h3 style="text-align:center; font-size: 15px;" id="countdown"></h3>
 </div>
+
+<!-- Countdown Timer -->
+<script>
+
+	var end = new Date("April 27, 2019 23:59:00").getTime();
+
+	var _second = 1000;
+	var _minute = _second * 60;
+	var _hour = _minute * 60;
+	var _day = _hour * 24;
+	var timer;
+
+	function showRemaining() {
+	  var now = new Date();
+	  var distance = end - now;
+	  if (distance < 0) {
+		clearInterval(timer);
+		document.getElementById('countdown').innerHTML = 'Today is the day!';
+		return;
+	  }
+	  var days = Math.floor(distance / _day);
+	  
+	  document.getElementById('countdown').innerHTML = "Number of days until the big day: " + days;
+	}
+	
+	timer = setInterval(showRemaining, 1000);
+
+</script>
 
 <!-- Google Maps Api -->
 <div id="map" class="bgimg-2" id="map">
@@ -104,7 +134,7 @@ Clean up custom styles
   </div>
 </div>
 
-<div class="bgimg-2">
+<div class="bgimg-2" style="background: "wood.jpg">
   <div class="caption_2">
     <span class="border">We look forward to sharing our day with you!</span>
   </div>

@@ -209,7 +209,7 @@ background-color: grey;
 /* The navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #282E34;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -230,6 +230,6 @@ background-color: grey;
 
 /* Change background on mouse-over */
 .navbar a:hover {
-    background: #ddd;
-    color: black;
+    background: #ff9999;
+    color: white;
 }
