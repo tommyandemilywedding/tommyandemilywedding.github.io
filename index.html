@@ -51,6 +51,7 @@ Clean up custom styles
 	</ul>
 	<li><b>Location:</b> Paramount's Meyer Ballroom</li>
 	<li><b>Address:</b> 8 E Galena Blvd, Aurora, IL 60506</li>
+	<li><b>Parking:</b> Valet parking is available for free at Hollywood Casino on E New York St</li>
 	<li><b>Bar:</b> Open</li>
   </ul>
   <h3 style="text-align:center; font-size: 15px;" id="countdown"></h3>
@@ -59,7 +60,7 @@ Clean up custom styles
 <!-- Countdown Timer -->
 <script>
 
-	var end = new Date("April 27, 2019 23:59:00").getTime();
+	var end = new Date("April 27, 2019 17:30:00").getTime();
 
 	var _second = 1000;
 	var _minute = _second * 60;
@@ -80,7 +81,7 @@ Clean up custom styles
 	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	  
-	  document.getElementById('countdown').innerHTML = "Number of days until the big day: " + days + "days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
+	  document.getElementById('countdown').innerHTML = "Party starts in " + days + " days, " + hours + " hours, " + minutes + " minutes, " + seconds + " seconds!";
 	}
 	
 	timer = setInterval(showRemaining, 1000);
@@ -88,7 +89,7 @@ Clean up custom styles
 </script>
 
 <!-- Google Maps Api -->
-<div id="map" class="bgimg-2" id="map">
+<!-- <div id="map" class="bgimg-2" id="map">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
 	<script>
@@ -108,7 +109,7 @@ Clean up custom styles
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT8qo8jQN8MCHQLwCBU6j_TdjTnJuBdtA&callback=initMap">
     </script>
   </div>
-</div>
+</div> -->
 
 <!-- Our Story -->
 <div id ="ourStory" style="position:relative;">
