@@ -76,8 +76,11 @@ Clean up custom styles
 		return;
 	  }
 	  var days = Math.floor(distance / _day);
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	  
-	  document.getElementById('countdown').innerHTML = "Number of days until the big day: " + days;
+	  document.getElementById('countdown').innerHTML = "Number of days until the big day: " + days + "days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
 	}
 	
 	timer = setInterval(showRemaining, 1000);
